@@ -40,7 +40,7 @@ This project is licensed under the Apache License 2.0, which allows for both aca
 When using technologies or theories developed in this repository in academic or research settings, please cite this repository as well as the original publications by Rupert Sheldrake.
 
 ## Creator's Note
-This repository was created by Atlantis Paul Here, a non-academic enthusiast who sees the connections between disparate scientific concepts and seeks to explore them through experimentation. This distribution of code under the Apache 2.0 license is intended to foster collaboration and further exploration.
+This repository was created by Atlantis Paul Here, a non-academic enthusiast who sees the connections between viffering scientific and technologu concepts and seeks to explore them through experimentation. This distribution of code under the Apache 2.0 license is intended to foster collaboration and further exploration.
 
 ## Contact
 For further information, collaboration opportunities, or any queries, please reach out via my social media "Atlantisphere"
