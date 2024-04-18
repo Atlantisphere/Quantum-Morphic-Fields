@@ -6,7 +6,7 @@ Welcome to the Quantum-Morphic Fields Project repository. This interdisciplinary
 ## Introduction
 Morphic fields, a concept extensively researched by [Rupert Sheldrake](https://www.sheldrake.org/research), suggest the presence of fields that both influence and are influenced by living organisms. This project attempts to understand and validate these fields through the lens of quantum mechanics, using both theoretical models and experimental approaches. Key influences on this work include Sheldrake's theories on [morphic resonance](https://www.sheldrake.org/research/morphic-resonance) and [form from sound](https://www.sheldrake.org/research/form-from-sound).
 
-## Project Components
+## Project Experiments
 
 ### Simulation of Biological Adaptation
 We design and simulate quantum circuits that mimic biological adaptation, testing if quantum systems can develop behaviors similar to biological systems' adaptations to environmental pressures.
@@ -24,7 +24,13 @@ Our experiments study the memory capabilities of quantum systems, exploring how 
 Using a network of quantum computers, we examine system-wide responses to local changes, testing theories of morphic fields at a larger scale.
 
 ## Methodology
-Our methodology incorporates the use of [IBM Quantum](https://quantum.ibm.com/) and Jupyter Notebooks, facilitating a blend of theoretical simulation and practical experimentation. Each component's specific methodologies are detailed in their respective directories within this repository.
+Our methodology incorporates the use of [IBM Quantum](https://quantum.ibm.com/) and Jupyter Notebooks, facilitating a blend of theoretical simulation and practical experimentation. Each experiment's specific methodologies are detailed in their respective directories within this repository as they become available in notebook form.
+
+### Integrating Analog Computing
+To enhance the precision and versatility of our experiments, we are exploring the integration of analog computing. Analog devices, known for their ability to handle continuous data and excel in tasks involving sine wave mathematics, could significantly refine our simulation accuracy. For example, using analog hardware like [Analog Devices' precision converters](https://www.analog.com/en/products/analog-to-digital-converters.html) can help in effectively sampling and processing continuous signals.
+
+#### Simulating Analog Processes Digitally
+Given the digital constraints of current mainstream computing platforms, we are also experimenting with time-slicing techniques on digital systems to simulate analog computation. This approach involves managing the input bit stream in such a way that it mimics the continuous nature of analog signals, potentially overcoming the digital bottleneck and allowing for a more nuanced simulation of quantum and morphic phenomena.
 
 ## How to Contribute
 Contributions are welcome from all areas of science and technology, including researchers, engineers, and enthusiasts. Here's how you can contribute:
@@ -34,7 +40,7 @@ Contributions are welcome from all areas of science and technology, including re
 - **Issues**: Identify bugs, propose new features, or suggest improvements.
 
 ## Licensing and Recognition
-This project is licensed under the Apache License 2.0, which allows for both academic and commercial use while ensuring that original contributors, like Rupert Sheldrake ([ORCID: 0000-0001-8814-4014](https://orcid.org/0000-0001-8814-4014)), are appropriately recognized in all derivative works. For more details, see the [LICENSE](LICENSE) file.
+This project is licensed under the Apache License 2.0, which allows for both academic and commercial use while ensuring that original theorists, like Rupert Sheldrake ([ORCID: 0000-0001-8814-4014](https://orcid.org/0000-0001-8814-4014)), are appropriately recognized in all derivative works. For more details, see the [LICENSE](LICENSE) file.
 
 ### Citing This Work
 When using technologies or theories developed in this repository in academic or research settings, please cite this repository as well as the original publications by Rupert Sheldrake.
