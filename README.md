@@ -51,3 +51,26 @@ This repository was created by Atlantis Paul Here ([ORCID: 0009-0006-6719-7671](
 ## Contact
 For further information, collaboration opportunities, or any queries, please reach out via my ORCID links. 
 
+## Prerequisites
+Before setting up the project, ensure you have Anaconda or Miniconda installed to manage environments and dependencies. This project is developed using Python 3.9.
+
+## Setup
+
+### Cloning the Repository
+First, clone the repository to your local machine:
+```bash
+git clone https://github.com/Atlantisphere/Quantum-Morphic-Fields.git
+cd Quantum-Morphic-Fields
+```
+
+### Windows
+You should be able to congigure your engironment with the provided env-setup.sh file
+
+### Linux or BSD Like Unix (MacOS)
+You should be able to congigure your engironment with the provided env-setup.bat file
+
+### Finally
+You will need to change the value in the .env within the root of this repo to enter yout IBM QUANTUM API key. 
+This is .gitignored. 
+*Please never commit or push your API keys*
+ 
