@@ -1,7 +1,8 @@
 # Quantum-Morphic Fields Project
 
 ## Overview
-Welcome to the Quantum-Morphic Fields Project repository. This interdisciplinary initiative seeks to bridge quantum mechanics with the theoretical concept of morphic fields as proposed by [Rupert Sheldrake](https://www.sheldrake.org/research), aiming to explore and experimentally validate the interaction between these domains.
+Welcome to the Quantum-Morphic Fields Project repository which is currently laying out its frameworks. This interdisciplinary initiative seeks to bridge quantum mechanics with the 
+theoretical concept of morphic fields as proposed by [Rupert Sheldrake](https://www.sheldrake.org/research), aiming to explore and experimentally validate the interaction between these domains.
 
 ## Introduction
 Morphic fields, a concept extensively researched by [Rupert Sheldrake](https://www.sheldrake.org/research), suggest the presence of fields that both influence and are influenced by living organisms. This project attempts to understand and validate these fields through the lens of quantum mechanics, using both theoretical models and experimental approaches. Key influences on this work include Sheldrake's theories on [morphic resonance](https://www.sheldrake.org/research/morphic-resonance) and [form from sound](https://www.sheldrake.org/research/form-from-sound).
@@ -54,12 +55,16 @@ For further information, collaboration opportunities, or any queries, please rea
 ## Prerequisites
 Before setting up the project, ensure you need to have python 3 installed and use manage environments and dependencies.
 
+These are set out in [requirements.txt](requirements.txt)
 numpy
 matplotlib
 qiskit
 jupyterlab
 
-## Setup
+## Dockerisation
+A [dockerfile](dockerfile) has been created to assisnt with dockerising.
+
+## Setup (Docker/Local FS)
 
 ### Cloning the Repository
 First, clone the repository to your local machine:
@@ -68,11 +73,13 @@ git clone https://github.com/Atlantisphere/Quantum-Morphic-Fields.git
 cd Quantum-Morphic-Fields
 ```
 
-### Windows
-You should be able to congigure your engironment with the provided env-setup.sh file
-
 ### Linux or BSD Like Unix (MacOS)
-You should be able to congigure your engironment with the provided env-setup.bat file
+You should be able to congigure your engironment with the provided env-setup.sh file,
+This will tell you the things you dont have and suggest where to get them
+
+### Windows
+You should be able to congigure your engironment with the provided env-setup.bat file, 
+this will tell you the things you dont have and suggest where to get them
 
 ### Finally
 You will need to change the value in the .env within the root of this repo to enter yout IBM QUANTUM API key. 
