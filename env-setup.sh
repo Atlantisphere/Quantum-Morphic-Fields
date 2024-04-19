@@ -1,22 +1,49 @@
 #!/bin/bash
 
-if ! command -v conda &> /dev/null
+if ! command -v docker &> /dev/null
 then
-    echo "conda could not be found, please install Anaconda or Miniconda."
-    echo "Visit https://www.anaconda.com/products/individual for more information and download options."
-    exit
+    echo "Docker could not be found. Please install Docker from https://docs.docker.com/get-docker/"
+    exit 1
 fi
 
-conda create --name quantum-env python=3.9 -y
+if ! command -v docker-compose &> /dev/null
+then
+    echo "docker-compose could not be found. Please install Docker Compose from https://docs.docker.com/compose/install/"
+    exit 1
+fi
 
-source activate quantum-env
+if ! command -v python3 &> /dev/null
+then
+    echo "Python 3 could not be found. Please install Python from https://www.python.org/downloads/"
+    exit 1
+fi
 
-conda install -c conda-forge notebook matplotlib numpy scipy -y
-conda install -c anaconda pandas -y
-conda install -c conda-forge qiskit -y
+if ! command -v pip3 &> /dev/null
+then
+    echo "pip3 could not be found. It is usually installed with Python. Please check your Python installation."
+    exit 1
+fi
 
-conda install -c conda-forge jupyter_contrib_nbextensions -y
-jupyter contrib nbextension install --user
+echo "Select your setup type:"
+echo "1) Docker Setup"
+echo "2) Local Setup"
+read -p "Enter choice [1-2]: " setup_choice
 
-echo "Setup completed. Activate your environment with 'conda activate quantum-env'"
-echo "Please rememmber to adjust you IBM API key within the .env file. This is .gitignoerd"
+case $setup_choice in
+    1)
+        echo "Setting up Docker environment..."
+        docker-compose up -d
+        ;;
+    2)
+        echo "Setting up local environment..."
+        python3 -m venv venv
+        source venv/bin/activate
+        pip3 install -r requirements.txt
+        deactivate
+        echo "Local setup complete. Activate the virtual environment with 'source venv/bin/activate'."
+        ;;
+    *)
+        echo "Invalid option. Exiting."
+        exit 1
+        ;;
+esac
