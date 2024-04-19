@@ -52,7 +52,12 @@ This repository was created by Atlantis Paul Here ([ORCID: 0009-0006-6719-7671](
 For further information, collaboration opportunities, or any queries, please reach out via my ORCID links. 
 
 ## Prerequisites
-Before setting up the project, ensure you have Anaconda or Miniconda installed to manage environments and dependencies. This project is developed using Python 3.9.
+Before setting up the project, ensure you need to have python 3 installed and use manage environments and dependencies.
+
+numpy
+matplotlib
+qiskit
+jupyterlab
 
 ## Setup
 
