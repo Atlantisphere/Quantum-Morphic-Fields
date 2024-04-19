@@ -1,22 +1,52 @@
- @echo off
+@echo off
+cls
 
-where conda >nul 2>nul
+where /q docker
 if %errorlevel% neq 0 (
-    echo conda could not be found, please install Anaconda or Miniconda.
-    echo "Visit https://www.anaconda.com/products/individual for more information and download options."
+    echo Docker could not be found. Please install Docker from https://docs.docker.com/get-docker/
     exit /b
 )
 
-conda create --name quantum-env python=3.9 -y
+where /q docker-compose
+if %errorlevel% neq 0 (
+    echo docker-compose could not be found. Please install Docker Compose from https://docs.docker.com/compose/install/
+    exit /b
+)
 
-call activate quantum-env
+where /q python
+if %errorlevel% neq 0 (
+    echo Python could not be found. Please install Python from https://www.python.org/downloads/
+    exit /b
+)
 
-conda install -c conda-forge notebook matplotlib numpy scipy -y
-conda install -c anaconda pandas -y
-conda install -c conda-forge qiskit -y
+where /q pip
+set PIP_CMD=pip
+if %errorlevel% neq 0 (
+    where /q pip3
+    if %errorlevel% neq 0 (
+        echo pip could not be found. It is usually installed with Python. Please check your Python installation.
+        exit /b
+    ) else (
+        set PIP_CMD=pip3
+    )
+)
 
-conda install -c conda-forge jupyter_contrib_nbextensions -y
-jupyter contrib nbextension install --user
+echo Select your setup type:
+echo 1) Docker Setup
+echo 2) Local Setup
+set /p setup_choice=Enter choice [1-2]: 
 
-echo Setup completed. Activate your environment with 'conda activate quantum-env'
-echo Please rememmber to adjust you IBM API key within the .env file. This is also pre .gitignore(ed)
+if "%setup_choice%"=="1" (
+    echo Setting up Docker environment...
+    docker-compose up -d
+) else if "%setup_choice%"=="2" (
+    echo Setting up local environment...
+    python -m venv venv
+    call venv\Scripts\activate
+    %PIP_CMD% install -r requirements.txt
+    call venv\Scripts\deactivate
+    echo Local setup complete. Activate the virtual environment with 'venv\Scripts\activate'.
+) else (
+    echo Invalid option. Exiting.
+    exit /b
+)
