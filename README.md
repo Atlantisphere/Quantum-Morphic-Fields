@@ -7,7 +7,28 @@ theoretical concept of morphic fields as proposed by [Rupert Sheldrake](https://
 ## Introduction
 Morphic fields, a concept extensively researched by [Rupert Sheldrake](https://www.sheldrake.org/research), suggest the presence of fields that both influence and are influenced by living organisms. This project attempts to understand and validate these fields through the lens of quantum mechanics, using both theoretical models and experimental approaches. Key influences on this work include Sheldrake's theories on [morphic resonance](https://www.sheldrake.org/research/morphic-resonance) and [form from sound](https://www.sheldrake.org/research/form-from-sound).
 
-## Project Experiments
+## Project Overview
+This project seeks to explore the intersection of quantum computing and morphic fields to validate theoretical models and conduct experimental approaches using quantum systems. Our goal is to push the boundaries of conventional physics and explore new concepts that may explain unexplored phenomena in quantum mechanics and biology.
+
+## Goals
+
+### Exploration of Morphic Fields as a Factor in Space-Time Creation
+- **Background**: Traditionally, space-time is viewed as a fundamental fabric described by Einstein's theory of relativity, influenced by mass and energy but not 'created' by phenomena within the universe. However, this project proposes to explore the speculative idea that morphic fields—hypothetical fields thought to connect life forms through a form of collective memory—could play a role in the formation or influence of space-time itself.
+  
+- **Objective**: To develop a theoretical framework that considers how morphic fields might interact with fundamental physical constructs, potentially acting as a formative energy influencing the fabric of space-time. This exploration will involve:
+  - Reviewing existing literature on morphic fields and their proposed properties.
+  - Theorizing potential interactions between morphic fields and established quantum fields.
+  - Proposing mathematical models that could integrate morphic resonance with effects on space-time.
+
+- **Challenges**:
+  1. **Empirical Evidence**: Addressing the lack of empirical evidence for morphic fields and identifying experimental setups that could potentially reveal their influence on quantum systems.
+  2. **Mathematical Modeling**: Developing new mathematical formalisms capable of incorporating morphic fields into the existing framework of space-time and quantum mechanics.
+  3. **Theoretical Integration**: Ensuring the proposed theories can be coherently integrated with general relativity and quantum field theory, respecting the scientific rigor and empirical demands of these established theories.
+
+- **Speculative Nature**: This exploration is highly speculative and philosophical, drawing on concepts that are currently not mainstream in the scientific community. It aims to foster creative thinking and interdisciplinary research that could open up new directions in physics and quantum biology.
+
+
+## Future Project Experiments
 
 ### Simulation of Biological Adaptation
 We design and simulate quantum circuits that mimic biological adaptation, testing if quantum systems can develop behaviors similar to biological systems' adaptations to environmental pressures.
